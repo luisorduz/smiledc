@@ -1,0 +1,84 @@
+.flexHomeSection {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 60vw;
+    margin-top: 23vh;
+    width: 36vw;
+    gap: 5.5vh;
+  }
+  
+  .flexHomeSectionTitle {
+    font-family: "LastOne";
+    font-size: 3.7rem;
+    line-height: 1;
+    font-weight: 300;
+    -webkit-line-clamp: 2;
+    margin-bottom: 0;
+  }
+  
+  .flexHomeSectionText {
+    font-size: 1.2rem !important;
+    text-align: justify;
+    line-height: 1;
+    font-weight: 500 !important;
+  }
+  
+  .buttonHomeSection {
+    margin-top: 20px;
+  }
+  
+  .flexButtonHS {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 930px) and (min-width: 600px) {
+    .flexHomeSectionTitle {
+      font-size: 33px;
+    }
+    .flexHomeSectionText {
+      font-size: 20px;
+    }
+    .flexHomeSection {
+      margin-left: 62vw;
+      margin-top: 23vh;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .flexHomeSectionTitle {
+      font-size: 25px;
+    }
+    .flexHomeSection {
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90vw;
+      justify-content: center;
+      background-color: rgba(252, 251, 251, 0.8);
+      padding: 10px;
+      border-radius: 10px;
+      margin: 0;
+      gap: 1vh;
+    }
+  
+    .flexHomeSectionText {
+      font-size: 16px !important;
+      font-weight: 400 !important;
+    }
+  
+    .flexHomeSectionTitle {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  
+    .flexButtonHS {
+      justify-content: center;
+    }
+  
+    .buttonHomeSection {
+      margin-top: 15px;
+    }
+  
+  }

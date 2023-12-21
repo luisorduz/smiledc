@@ -1,0 +1,131 @@
+/* src/components/EmailForm/EmailForm.module.css */
+
+.contactForm {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5vh;
+}
+
+.flexContactSection {
+  display: flex;
+  width: 35vw;
+  height: 75vh;
+  position: absolute;
+  margin-left: 55vw;
+  margin-top: 12vh;
+  flex-direction: row;
+  gap: 3vw;
+}
+.flexContactSectionTitle {
+  font-family: "LastOne";
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 300;
+  -webkit-line-clamp: 2;
+  margin: 0;
+}
+.flexContactSectionText {
+  -webkit-line-clamp: 2;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.flexContactSectionBoxText {
+  width: 100%;
+}
+
+.divider {
+  width: 1px;
+  height: 100%;
+  background-color: gray
+}
+.formOptionBox {
+  height: auto;
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+.formLabel {
+  color: black;
+}
+
+.formInput {
+  width: 100%;
+}
+
+.flexContentContactSection {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  height: auto;
+  width: auto;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.flexButtonContactS {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+.formItemBox {
+  margin-bottom: 1.5vh;
+}
+@media (max-width: 930px) and (min-width: 600px) {
+  .flexContactSectionTitle {
+    font-size: 11vh;
+  }
+  .flexContactSectionText {
+    font-size: 10px !important;
+    text-align: justify;
+  }
+  .contactForm {
+    margin-bottom: 0;
+  }
+  .formInput {
+    height: 7vh;
+  }
+  .flexButtonContactS {
+    margin-top: 20px;
+  }
+  .flexContactSection {
+    margin-top: 2vh;
+    margin-left: 50vw;
+    width: 40vw;
+  }
+}
+
+
+@media (max-width: 576px) {
+
+  .contactForm {
+    margin-bottom: 0;
+  }
+  .flexContactSection {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: auto;
+    justify-content: center;
+    background-color: rgba(252, 251, 251, 0.8);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0;
+    display: block;
+  }
+  .flexContactSectionTitle {
+    font-size: 10vw;
+  }
+
+  .flexContactSectionText {
+    font-size: 11px;
+  }
+  .flexContentContactSection {
+    gap: 2vh;
+  }
+  .flexButtonContactS {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,114 @@
+.carouselContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.textContainer {
+  width: 35%;
+  height: auto;
+}
+.boxCarouselImage {
+  width: 400px;
+  height: 400px;
+}
+.headerTextContainer {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-family: "LastOne";
+  font-size: 2rem;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0px;
+}
+
+.carouselItem {
+  padding: 0 10px;
+}
+
+.carouselArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.prevArrow {
+  left: 10px;
+}
+
+.nextArrow {
+  right: 10px;
+}
+
+.slideEje {
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+.textSuccessCasesSection {
+  font-size: 1rem;
+  line-height: 1;
+  text-align: justify;
+}
+.h3SuccessCases {
+  margin-bottom: 0px;
+  font-family: "LastOne";
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .carouselContainer {
+    flex-direction: row;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 930px) and (min-width: 600px) {
+  .boxCarouselImage {
+    width: 45vw;
+  }
+  .textContainer {
+    height: auto;
+    width: 30vw;
+  }
+  .carouselContainer {
+    gap: 30px;
+  }
+  .headerTextContainer {
+    margin-bottom: 10px;
+    font-size: x-large;
+  }
+}
+
+@media (max-width: 600px) {
+  .carouselContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .textContainer {
+    width: 85vw;
+  }
+
+  .boxCarouselImage {
+    width: 90vw;
+  }
+  .headerTextContainer {
+    text-align: center;
+    margin: 0;
+  }
+  .textSuccessCasesSection {
+    font-size: .9rem;
+  }
+
+}

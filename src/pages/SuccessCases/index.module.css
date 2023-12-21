@@ -1,0 +1,107 @@
+.flexProcSection {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: center;
+  gap: 9vh;
+  height: auto;
+  margin: 40px auto 40px;
+}
+
+.flexHomeSectionTitle {
+  font-family: "LastOne";
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.flexPhotoSlider {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.cardProcSection {
+  display: flex;
+  width: 80vw;
+  height: 30vh;
+  border: 3px solid black;
+  border-radius: 10px;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.boxCardProcSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerCardProcSection {
+  font-size: 2.3rem;
+  font-weight: 700;
+  font-family: "LastOne";
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.textCardProcSection {
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1;
+}
+
+
+@media (max-width: 930px) and (min-width: 600px) {
+  .flexProcSection {
+    gap: 40px;
+    margin-top: 50px;
+    width: 90vw;
+  }
+  .flexHomeSectionTitle {
+    font-size: 50px;
+  }
+  .cardProcSection {
+    width: 90vw;
+    height: 45vh;
+    margin-top: 20px;
+  }
+  .headerCardProcSection {
+    font-size: 2rem;
+  }
+  .textCardProcSection {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .flexHomeSectionTitle {
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-align: center;
+    -webkit-line-clamp: 1;
+  }
+  .flexProcSection {
+    gap: 40px;
+    margin-top: 40px;
+    padding: 10px;
+    width: 90vw;
+  }
+  .cardProcSection {
+    width: 90vw;
+    height: 30vh;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  .textCardProcSection {
+    font-size: .8rem !important;
+  }
+  .headerCardProcSection {
+    font-size: 1.3rem;
+  }
+}
+

@@ -1,0 +1,29 @@
+.boptionsNotClicked {
+    width: auto;
+    height: 50px;
+    margin-right: 2vw;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boptionsNotClicked:hover {
+    width: auto;
+    height: 30px;
+    border-bottom: 2px solid rgba(224, 190, 131, 255);
+    margin-right: 2vw;
+}
+
+.linknb {
+    text-decoration: none;
+}
+
+.textNotClicked {
+    color: white;
+}
+
+@media (max-width: 576px) {
+    .textNotClicked {
+        font-size: .8rem !important;
+    }
+}

@@ -1,0 +1,114 @@
+.flexAboutusSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1vh;
+    height: auto;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.flexAboutusSectionTitle {
+    font-family: "LastOne";
+    font-size: 3.7rem;
+    line-height: 1;
+    font-weight: 300;
+    margin-top: 70px;
+}
+
+.flexAboutusCards {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardAboutusSection {
+    display: flex;
+    width: 45vw;
+    height: 200px;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 15px;
+}
+
+.boxCardAboutusSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerCardAboutusSection {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "LastOne";
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.textCardAboutusSection {
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 1;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+}
+
+
+@media (max-width: 930px) and (min-width: 600px) {
+    .flexAboutusSection {
+        gap: 40px;
+        margin-top: 70px;
+    }
+
+    .flexAboutusSectionTitle {
+        font-size: 50px;
+    }
+
+    .textCardAboutusSection {
+        font-size: 15px;
+    }
+
+    .headerCardAboutusSection {
+        font-size: 17px;
+    }
+
+    .cardAboutusSection {
+        width: 60vw;
+        height: 42vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .flexAboutusSectionTitle {
+        font-size: 30px;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+
+    .flexAboutusSection {
+        gap: 30px;
+    }
+
+    .cardAboutusSection {
+        width: 90vw;
+        margin-bottom: 10px;
+        height: fit-content;
+    }
+
+    .headerCardAboutusSection {
+        font-size: 19px;
+        margin: 0;
+    }
+
+    .textCardAboutusSection {
+        font-size: 14px !important;
+    }
+
+    .divider {
+        margin-bottom: 15px;
+    }
+}

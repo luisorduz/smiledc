@@ -1,0 +1,24 @@
+/* Sidebar.module.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Ancho del sidebar cuando está cerrado */
+  width: 250px; /* Ancho del sidebar cuando está abierto */
+  height: 100%;
+  background-color: #fff; /* Ajusta el color de fondo según tus preferencias */
+  transition: left 0.3s ease-in-out; /* Agrega una transición suave para el efecto de apertura/cierre */
+  z-index: 100; /* Ajusta según sea necesario para estar por encima del contenido principal */
+  padding: 16px; /* Ajusta según sea necesario para el espacio interno del sidebar */
+  background-color: black;
+}
+
+.sidebarOpen {
+  left: 0;
+}
+
+.sidebarClosed {
+  left: -250px;
+}
+
+/* Agrega estilos adicionales según tus necesidades */
