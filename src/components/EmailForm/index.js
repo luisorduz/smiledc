@@ -28,10 +28,9 @@ export const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_sj6c4wg",
-        "template_jso44yv",
-        e.target,
-        "-a7fLrpzWxm2Mhz4K"
+        "service_wuzwgk8",
+        "template_n6hnl8r",
+        e.target
       )
       .then(
         (result) => {
