@@ -30,7 +30,8 @@ export const ContactForm = () => {
       .sendForm(
         "service_wuzwgk8",
         "template_n6hnl8r",
-        e.target
+        e.target,
+        "xH2aeDfC5o-nfd5VO"
       )
       .then(
         (result) => {
